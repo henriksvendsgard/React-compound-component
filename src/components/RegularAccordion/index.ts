@@ -1,0 +1,2 @@
+export { RegularAccordion } from "./RegularAccordion";
+

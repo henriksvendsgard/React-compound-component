@@ -1,0 +1,102 @@
+.regular-accordion {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.regular-accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.regular-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.regular-accordion-trigger {
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f2937;
+  text-align: left;
+  transition: background-color 0.15s;
+}
+
+.regular-accordion-trigger:hover {
+  background-color: #f9fafb;
+}
+
+.regular-accordion-trigger .icon {
+  font-size: 18px;
+}
+
+.regular-accordion-trigger .badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.regular-accordion-trigger .chevron {
+  margin-left: auto;
+  font-size: 10px;
+  color: #9ca3af;
+  transition: transform 0.2s;
+}
+
+.regular-accordion-trigger .chevron.open {
+  transform: rotate(180deg);
+}
+
+.regular-accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease-out;
+}
+
+.regular-accordion-content.open {
+  grid-template-rows: 1fr;
+}
+
+.regular-accordion-content-inner {
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.regular-accordion-content.open .regular-accordion-content-inner {
+  padding: 0 20px 16px;
+}
+
+.regular-accordion-content p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.content-button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.content-button:hover {
+  background: #2563eb;
+}
+
