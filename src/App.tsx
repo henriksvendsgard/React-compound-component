@@ -37,7 +37,7 @@ function App() {
     return (
         <div className="app">
             <header className="header">
-                <h1>React Compound Component Mønster</h1>
+                <h1>React Compound Components</h1>
                 <p className="subtitle">Frontend Forum Demo av Henrik</p>
             </header>
 

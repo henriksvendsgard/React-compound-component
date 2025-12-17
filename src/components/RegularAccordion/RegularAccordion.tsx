@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./RegularAccordion.css";
 
-// ============================================
 // DEN "VANLIGE" MÅTEN - Props-basert tilnærming
-// ============================================
 
 // Vi sender ALL data gjennom props - virker fornuftig i starten...
 interface AccordionItem {
@@ -88,9 +86,7 @@ export function RegularAccordion({
     );
 }
 
-// ============================================
 // PROBLEMENE MED DENNE TILNÆRMINGEN:
-// ============================================
 //
 // 1. PROP-EKSPLOSJON 💥
 //    Hver ny funksjon = nye prop(s)
@@ -111,4 +107,3 @@ export function RegularAccordion({
 //    Kan ikke nøste komponenter naturlig
 //    Vanskelig å utvide uten å endre kildekoden
 //
-// ============================================
